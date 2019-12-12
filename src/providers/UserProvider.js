@@ -9,6 +9,11 @@ class UserProvider extends React.Component {
     firstName: "John",
     lastName: "Doe",
     email: "johndoe@test.com",
+    updateUser: (user) => this.updateUser(user), 
+  };
+
+  updateUser = (user) => {
+    this.setState({ ...user });
   };
 
   render() {
