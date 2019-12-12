@@ -1,10 +1,12 @@
 import React from 'react';
 import { Route, Switch, } from 'react-router-dom';
-import UserInfo from './components/UserInfo';
 import { Container, } from 'semantic-ui-react';
+import Navbar from './components/Navbar';
+import UserInfo from './components/UserInfo';
 
 const App = () => (
   <>
+    <Navbar />
     <Container>
       <Switch>
         <Route exact path="/" render={ () => <div>Home</div> } />
