@@ -10,9 +10,7 @@ const UserForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const updatedUser = { firstName: firstName, lastName: lastName, email: email}
-    debugger
-    user.updateUser(updatedUser);
+    user.updateUser({ firstName, lastName, email});
   };
 
   return (
